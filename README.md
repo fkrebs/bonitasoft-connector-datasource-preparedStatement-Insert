@@ -27,6 +27,7 @@ Bonita BPM version : 6.3.3
 * Change the JNDI Name to access your datasource
 * Edit the prepared statement
 * Set the parameter list. For each :
+
 ** add a Type (String, Integer,Double or Date)
 ** add an order which will respect the prepared statement field order
 ** add a value : WARNING : the value is only a String , it will be cast inside the connector: this is a conception choice !
@@ -40,5 +41,6 @@ See the following screen shot to understand the connector configuration :
 * I need more types. How to ?
 Update the connector implementation
 * I want to change the datasource : How to ?
+
 ** Edit your bonita.xml
 ** change your process configuration parameter
