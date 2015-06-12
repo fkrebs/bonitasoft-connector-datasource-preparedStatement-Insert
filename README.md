@@ -14,8 +14,11 @@ Bonita BPM version : 6.3.3
 * Execute the sql script in your Posgresql database : script_db_postgresql.sql
 * Deploy the process on your Bonita BPM 6.5.3 server : example_preparedStatementInsertConnector-01.00.00.bos
 * Configure your datasource : 
-- edit the tomcat/conf/Catalina/localhost/bonita.xml
-- add a new datasource like the "Start for the PreparedStatement connector Example"  
+
+** edit the tomcat/conf/Catalina/localhost/bonita.xml
+
+** add a new datasource like the "Start for the PreparedStatement connector Example"  
+
 * Set the datasource parameter in the process parameter configuration (working example: dbDatasourceName = tmpTest01DS)
 * Run the process
 * Fill and validate the Insert form
