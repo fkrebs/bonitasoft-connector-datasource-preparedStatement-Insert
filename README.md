@@ -4,7 +4,7 @@
 
 Author : Frederic KREBS
 
-Bonita BPM version : 6.3.3
+Bonita BPM version : 6.5.3
 
 #Example works with:
 * Postgresql 
