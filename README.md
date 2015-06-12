@@ -30,9 +30,12 @@ Bonita BPM version : 6.3.3
 * Change the JNDI Name to access your datasource
 * Edit the prepared statement
 * Set the parameter list. For each :
-- add a Type (String, Integer,Double or Date)
-- add an order which will respect the prepared statement field order
-- add a value : WARNING : the value is only a String , it will be cast inside the connector: this is a conception choice !
+
+** add a Type (String, Integer,Double or Date)
+
+** add an order which will respect the prepared statement field order
+
+** add a value : WARNING : the value is only a String , it will be cast inside the connector: this is a conception choice !
 For the Date type, format the String (YYYY-MM-DD)
 
 * In the output operations, select your ID variable (which will take the generatedKey value) 
@@ -44,5 +47,7 @@ See the following screen shot to understand the connector configuration :
 * I need more types. How to ?
 Update the connector implementation
 * I want to change the datasource : How to ?
-- edit your bonita.xml
-- change your process configuration parameter
+
+** edit your bonita.xml
+
+** change your process configuration parameter
