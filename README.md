@@ -14,8 +14,8 @@ Bonita BPM version : 6.3.3
 * Execute the sql script in your Posgresql database : script_db_postgresql.sql
 * Deploy the process on your Bonita BPM 6.5.3 server : example_preparedStatementInsertConnector-01.00.00.bos
 * Configure your datasource : 
-** Edit the tomcat/conf/Catalina/localhost/bonita.xml
-** Add a new datasource like the "Start for the PreparedStatement connector Example"  
+- edit the tomcat/conf/Catalina/localhost/bonita.xml
+- add a new datasource like the "Start for the PreparedStatement connector Example"  
 * Set the datasource parameter in the process parameter configuration (working example: dbDatasourceName = tmpTest01DS)
 * Run the process
 * Fill and validate the Insert form
@@ -27,15 +27,9 @@ Bonita BPM version : 6.3.3
 * Change the JNDI Name to access your datasource
 * Edit the prepared statement
 * Set the parameter list. For each :
-
-
-** add a Type (String, Integer,Double or Date)
-
-
-** add an order which will respect the prepared statement field order
-
-
-** add a value : WARNING : the value is only a String , it will be cast inside the connector: this is a conception choice !
+- add a Type (String, Integer,Double or Date)
+- add an order which will respect the prepared statement field order
+- add a value : WARNING : the value is only a String , it will be cast inside the connector: this is a conception choice !
 For the Date type, format the String (YYYY-MM-DD)
 
 * In the output operations, select your ID variable (which will take the generatedKey value) 
@@ -47,6 +41,5 @@ See the following screen shot to understand the connector configuration :
 * I need more types. How to ?
 Update the connector implementation
 * I want to change the datasource : How to ?
-
-** Edit your bonita.xml
-** change your process configuration parameter
+- edit your bonita.xml
+- change your process configuration parameter
